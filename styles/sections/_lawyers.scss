@@ -1,0 +1,79 @@
+.lawyers {
+    background-color: #f7f7f7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__wrapper {
+        @include flex-row-sb-aic;
+        margin-top: 48px;
+        background-color: f7f7f7;
+    }
+}
+.laweyr__text:hover {
+cursor: url("../../images/pointer_lawyers.svg"), auto;
+}
+
+
+.lawyer__info {
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.laweyr__name {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
+
+.laweyr__description {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 16.8px */
+    text-transform: lowercase;
+}
+
+.return__description {
+    margin-bottom: 40px;
+    text-transform: none;
+}
+
+.laweyr__description_down {
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+}
+
+.return__name {
+    margin-top: 83px;
+    margin-bottom: 10px;
+}
+
+.laweyr__text {
+    position: relative;
+}
+
+.laweyr__text:hover .laweyr__return{
+    opacity: 1;
+}
+
+.laweyr__return {
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+// .lawyer:hover {
+// color: #fff;
+
+// }

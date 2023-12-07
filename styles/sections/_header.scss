@@ -1,0 +1,25 @@
+.header {
+
+    &__wrapper {
+        @include flex-row-sb-aic;
+    }
+
+    &__top {
+        padding: 16px 0;
+        background: #010101;
+    }
+
+    &__contacts {
+        @include flex-row-aic;
+        gap: 24px;
+    }
+
+    &__callme {
+        color: $accent-color;
+        font-size: 14px;
+        font-size: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    
+}
