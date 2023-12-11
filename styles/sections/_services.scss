@@ -42,7 +42,7 @@
     margin-bottom: 15px;
 }
 
-.servece__bts {
+.servece__bts, .btn{
     padding: 16px 24px;
     background-color: $accent-color;
     border: 2px solid $accent-color;
@@ -57,7 +57,7 @@
     display: block;
 }
 
-.servece__bts:hover {
+.btn:hover {
     background: $contrast-color;
     color: $accent-color;
     transition: 0.5s;

@@ -13,13 +13,13 @@
     }
 }
 
-.about__btns {
+.btns {
     margin-top: 32px;
     display: flex;
     gap: 24px;
 }
 
-.about__btn {
+.base__btn {
     background: $accent-color;
     border: 2px solid $accent-color;
     padding: 16px 24px; 
@@ -31,13 +31,13 @@
     text-transform: uppercase;
 }
 
-.about__btn:hover {
+.base__btn:hover {
     background: $contrast-color;
     color: $accent-color;
     transition: 0.5s;
 }
 
-.about__btn_gray {
+.gray__btn {
     background: #E6E6E6;
     border: 2px solid #E6E6E6;
     padding: 16px 24px;
@@ -49,7 +49,8 @@
     text-transform: uppercase;
 }
 
-.about__btn_gray:hover {
+.gray__btn:hover {
+    background: $contrast-color;
     color: #222222;
     transition: 0.5s;
 }

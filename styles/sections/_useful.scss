@@ -1,0 +1,86 @@
+.useful {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__card {
+    max-width: 424px;
+  }
+  &__wrapper {
+    @include flex-row-sb-aic;
+    margin-top: 48px;
+  }
+}
+
+.card__news {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  margin-top: 24.5px;
+  margin-bottom: 16px;
+}
+
+.time {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 14.4px */
+}
+
+.card__description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  margin-top: 16px;
+  margin-bottom: 24.5px;
+}
+
+.useful__btn {
+  margin-top: 58px;
+}
+
+.card__up {
+  cursor: url("../../images/pointer_useful.svg"), auto;
+  position: relative;
+}
+
+.overlay {
+  inset: 0 0 0 0;
+  position: absolute;
+  opacity: 0;
+  background: rgba(79, 143, 240, 0.4);
+  transition: 0.5s;
+}
+
+.card__up:hover .overlay {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.eye {
+  position: absolute;
+  opacity: 0;
+}
+
+.useful__card:hover {
+  & .eye { 
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 0.5s;
+  }
+  & .card__news {
+    color: $accent-color;
+  }
+}
+
+
